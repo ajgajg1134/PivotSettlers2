@@ -1,0 +1,73 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PivotSettlers2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:src="clr-namespace:PivotSettlers2"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="MY APPLICATION">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="resources">
+                <ListBox x:Name="resourcesListBox" Margin="0,0,-12,0">
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="Pictures/wheat.png"/>
+                        <TextBlock x:Name="WheatCount" HorizontalAlignment="Right" Height="75" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="50" Text="0" Width="100" Margin="60,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="Pictures/sheep.png"/>
+                        <TextBlock x:Name="SheepCount" Height="75" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="50" Text="0" Width="100" Margin="60,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="Pictures/ore.png"/>
+                        <TextBlock x:Name="OreCount" HorizontalAlignment="Right" Height="75" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="50" Text="0" Width="100" Margin="60,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="Pictures/brick.png"/>
+                        <TextBlock x:Name="BrickCount" HorizontalAlignment="Right" Height="75" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="50" Text="0" Width="100" Margin="60,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="Pictures/wood.png"/>
+                        <TextBlock x:Name="WoodCount" HorizontalAlignment="Right" Height="75" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="50" Text="0" Width="100" Margin="60,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock x:Name="ErrorMsg" HorizontalAlignment="Right" Height="50" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="20" Width="300" />
+                    </StackPanel>
+                </ListBox>
+            </controls:PivotItem>
+ 
+            <!--Pivot item two-->
+            <controls:PivotItem Header="development"> 
+                <!--Triple line list no text wrapping-->
+                <ListBox Name="devCards">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <!--Initialize listBox.ItemsSource to a list of strings holding all image names for cards (INCLUDE DUPLICATES FOR MULTI CARDS)-->
+                                <Image Width="100" Height="100" Source="{Binding BindsDirectlyToSource=True}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PivotItem>
+            <controls:PivotItem Header="trade">
+                <!--Triple line list no text wrapping-->
+                
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+ 
+</phone:PhoneApplicationPage>

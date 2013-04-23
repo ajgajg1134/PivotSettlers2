@@ -1,0 +1,15 @@
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\ApplicationIcon.png
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\Background.png
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\PivotSettlers2.dll
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\PivotSettlers2.pdb
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\AppManifest.xaml
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\PivotSettlers2.xap
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\Bin\Debug\Microsoft.Phone.Controls.xml
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\obj\Debug\App.g.cs
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\obj\Debug\MainPage.g.cs
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\obj\Debug\PivotSettlers2.g.resources
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\obj\Debug\PivotSettlers2.dll
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\obj\Debug\PivotSettlers2.pdb
+c:\users\andrew\documents\visual studio 2012\Projects\PivotSettlers2\PivotSettlers2\obj\Debug\XapCacheFile.xml
+C:\Users\Andrew\Documents\Visual Studio 2012\Projects\PivotSettlers2\PivotSettlers2\obj\Debug\PivotSettlers2.csprojResolveAssemblyReference.cache
